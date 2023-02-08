@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/img/favicon.png">
+    <meta http-equiv="Content-Security-Policy" content="object-src 'none' ; script-src 'self' https://www.google-analytics.com https://use.fontawesome.com/releases/v5.15.4/js/all.js">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+    content="Landing page for Autoelectrica-Guevara-SA-de-CV">
+    <meta name="author" content="Inovatik">
+    <title>Autoeléctrica Guevara</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!--div id="app"></div>
+    <h1 class="text-3xl text-red-500 font-bold underline">
+      Hello world!
+    </h1-->
+    <!-- Navbar -->
+    <nav class="relative-container mx-auto p-2">
+      <div class="flex items-center justify-between">
+        <!--Logo-->
+        <div class="pt-2">
+          <img class="h-20 w-30" src="/img/GUEVARA-BA.png" alt="Logo de Autoeléctrica Guevara">
+        </div>
+        <!-- Menu items-->
+        <div class="hidden md:flex space-x-5 mr-10">
+          <a href="#carousel" class="font-bold hover:text-lightBlue">INICIO</a>
+          <a href="#servicios" class="font-bold hover:text-blue">SERVICIOS</a>
+          <a href="#ubicaciones" class="font-bold hover:text-blue">UBICACIONES</a>
+          <a href="#quienes-somos" class="font-bold hover:text-blue">QUIENES SOMOS</a>
+          <a href="#contacto" class="font-bold hover:text-blue">CONTACTO</a>
+          <div class="flex flex-row">
+            <a href="tel:7717131011" class="font-bold"><i class="fas fa-phone text-green-500 px-2" ></i>771 713 1011</a>
+          </div>
+          <div class="flex flex-row">
+            <a href="tel:7712756969" class="font-bold"><i class="fab fa-whatsapp text-green-500 px-2"></i>771 275 6969</a>
+          </div>
+          <span class="fa-stack mt-0">
+            <a aria-label="Facebook logo" href="https://www.facebook.com/Autoelectrica-Guevara-SA-de-CV-374653962888632">
+                <i class="fas fa-circle fa-stack-2x text-blue-100 text-5xl leading-6"></i>
+                <i class="fab fa-facebook-f fa-stack-1x text-blue-500 text-4xl pl-1 leading-6"></i>
+            </a>
+          </span>
+        </div>
+        <!--Icon-->
+        <button id="menu-btn" class="block hamburger md:hidden focus:outline-none">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+      <!--Mobile menu-->
+      <div class="md:hidden">
+        <div id="menu" class="z-10 absolute flex-col items-center self-end hidden py-8 space-y-6 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+          <a href="#carousel">INICIO</a>
+          <a href="#servicios">SERVICIOS</a>
+          <a href="#ubicaciones" class="font-bold hover:text-blue">UBICACIONES</a>
+          <div class="flex flex-row">
+            <a href="tel:7717131011" class="font-bold"><i class="fas fa-phone text-green-500 px-2" ></i>771 713 1011</a>
+          </div>
+          <div class="flex flex-row">
+            <a href="tel:7712756969" class="font-bold"><i class="fab fa-whatsapp text-green-500 px-2"></i>771 275 6969</a>
+          </div>
+          <span class="fa-stack mt-0">
+            <a href="https://www.facebook.com/Autoelectrica-Guevara-SA-de-CV-374653962888632">
+                <i class="fas fa-circle fa-stack-2x text-blue-100 text-5xl leading-6"></i>
+                <i class="fab fa-facebook-f fa-stack-1x text-blue-500 text-4xl pl-1 leading-6"></i>
+            </a>
+          </span>
+        </div>
+      </div>
+    </nav>
+    <!-- Carousel -->
+    <section id="carousel">
+      <div class="carousel relative shadow-2xl bg-white">
+        <div class="carousel-inner relative overflow-hidden w-full">
+          <!--Slide 1-->
+          <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+          <div class="carousel-item h-[33vh] md:h-[80vh] absolute opacity-0">
+            <!--div class="block h-full w-full bg-indigo-500 text-white text-5xl text-center">Slide 1</div-->
+            <img src="/img/S1.png" alt="">
+          </div>
+          <label for="carousel-3" class="prev control-1 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+          <label for="carousel-2" class="next control-1 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+          
+          <!--Slide 2-->
+          <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item absolute opacity-0" style="height:80vh;">
+            <!--div class="block h-full w-full bg-orange-500 text-white text-5xl text-center">Slide 2</div-->
+            <img src="/img/S2.png" alt="">
+          </div>
+          <label for="carousel-1" class="prev control-2 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+          <label for="carousel-3" class="next control-2 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label> 
+          
+          <!--Slide 3-->
+          <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item absolute opacity-0" style="height:80vh;">
+            <!--div class="block h-full w-full bg-green-500 text-white text-5xl text-center">Slide 3</div-->
+            <img src="/img/S3.png" alt="">
+          </div>
+          <label for="carousel-2" class="prev control-3 w-10 h-10 ml-2 md:ml-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 left-0 my-auto">‹</label>
+          <label for="carousel-1" class="next control-3 w-10 h-10 mr-2 md:mr-10 absolute cursor-pointer hidden text-3xl font-bold text-black hover:text-white rounded-full bg-white hover:bg-blue-700 leading-tight text-center z-10 inset-y-0 right-0 my-auto">›</label>
+      
+          <!-- Add additional indicators for each slide-->
+          <ol class="carousel-indicators">
+            <li class="inline-block mr-3">
+              <label for="carousel-1" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+            </li>
+            <li class="inline-block mr-3">
+              <label for="carousel-2" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+            </li>
+            <li class="inline-block mr-3">
+              <label for="carousel-3" class="carousel-bullet cursor-pointer block text-4xl text-white hover:text-blue-700">•</label>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios">
+      <div class="flex flex-col bg-darkGreyishBlue items-center h-90">
+        <h1 class="text-5xl text-brightYellow font-bold my-10">Servicios</h1>
+        <!-- CONTROLLERS -->
+        <div class="flex flex-row w-full justify-around md:w-1/4">
+          <button id="tallerBtn" class="selected border-2 border-solid border-white rounded-full text-white -text-bold bg-darkGreyishBlue h-8 w-32 hover:border-aquablue hover:text-aquablue">TALLER</button>
+          <button id="refBtn" class="normal border-2 border-solid border-white rounded-full text-white -text-bold bg-darkGreyishBlue w-40 hover:border-aquablue hover:text-aquablue">REFACCIONARIA</Taller>
+        </div>
+        <div class="flex flex-col">
+          <!-- Refaccionaria -->
+          <div id="refaccionaria" class="hidden flex-col justify-end items-center md:flex-row">
+            <img src="/img/ref.png" class=" mt-4 w-full md:w-1/4" alt="Autopartes">
+            <div class="flex flex-col w-full items-start justify-start md:w-1/2">
+              <!-- Cards -->
+              <div class="flex flex-row my-5">
+                <div class="flex flex-col items-center">
+                  <i class="far fa-clock mx-5 mt-1 text-3xl text-aquablue"></i>
+                </div>
+                <div class="flex flex-col">
+                  <h1 class="text-2xl font-bold text-white">HORARIO</h1>
+                  <p class="text-white">
+                    Nuestros horarios son: <br>
+                    Lunes a Viernes de 8:30 a 18:30 <br>
+                    Sábados de 8:30 a 14:30
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-row my-4">
+                <i class="fas fa-phone mx-5 mt-1 text-3xl text-aquablue"></i>
+                <div class="flex flex-col">
+                  <h1 class="text-2xl font-bold text-white">TELÉFONOS</h1>
+                  <p class="text-white">
+                    Refaccionaria Vicente Segura: <a aria-label="Teléfono Vicente Segura" href="tel:7717131011" style="color: white;">771 7131011</a> <br> 
+                    Refaccionaria Av.Madero: <a aria-label="Teléfono Madero" href="7717184583" style="color: white;">7717184583</a>
+                  </p>
+                </div>
+              </div>
+              <div class="flex flex-row my-4">
+                <i class="fa-sharp fa-solid fa-cart-shopping mt-1 mx-5 text-3xl text-aquablue" style="font-size:2rem; margin-top:1rem;"></i>
+                <div class="flex flex-col">
+                  <h1 class="text-2xl font-bold text-white">GRAN SURTIDO</h1>
+                  <p class="text-white">
+                    En autopartes eléctricas. Llámanos y compruéabalo
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Taller -->
+          <div id="taller" class="flex flex-col-reverse md:flex-row mx-24 my-8">
+            <div class="flex flex-col md:flex-col ">
+              <!-- Cards -->
+              <div class="flex flex-col-reverse md:flex-row w-100%">
+                <div class="flex flex-col md:w-1/3">
+                  <i class="fas fa-cog mx-5 mt-1 text-3xl text-aquablue" alt="font-awesome cog icon"></i>
+                  <h1 class="font-bold text-white text-2xl">TALLER AUTOMOTRIZ ELEECTRICO</h1>
+                </div>
+                <div class="flex flex-col md:w-1/3">
+                  <i class="fas fa-wrench mx-5 mt-1 text-3xl text-aquablue"></i>
+                  <h1 class="font-bold text-white text-2xl">REPARAMOS</h1>
+                  <p class="text-white text-sm w-11/12">
+                    Sistema de carga, arranque, enfriamiento de motor, confort, afincación, alumbrado y fallas de fuel injection
+                  </p>
+                </div>
+                <div class="flex flex-col md:w-1/3">
+                  <i class="fa-sharp fa-solid fa-car-battery mx-5 mt-1 text-2xl text-aquablue"></i>
+                  <h1 class="font-bold text-white text-2xl pr-8">SERVICIO DE DIAGNÓSTICO, VENTA Y RECARGA DE BATERÍAS</h1>
+                </div>
+              </div>
+              <div class="felex flex-col text-white">
+                <h1 class="text-3xl">Nuestro taller</h1>
+                <p class="text-0.9rem w-90% pr-5">En Autoeléctrica Guevara nos especializamos en la reparación de las fallas eléctricas de tu auto. Más de 50 años de experiencia y miles de clientes satisfechos nos respaldan</p>
+              </div>
+            </div>
+            <div class="w-full md:w-1/2">
+              <img class="w-full" src="https://image.freepik.com/vector-gratis/auto-taller-mantenimiento-equipo-mecanico_24911-53850.jpg" alt="Car parts">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ubicaciones -->
+    <section id="ubicaciones">
+      <div class="flex flex-col items-center w-100% bg-lightBlue">
+        <div class="flex flex-col mt-10 mb-5 items-center">
+          <h1 class="font-bold text-brightYellow text-5xl">UBICACIONES</h1>
+          <p class="font-bold text-2xl">Contamos con 2 ubicaciones dentro de la ciudad de Pachuca, Hidalgo</p>
+        </div>
+         <!-- Map and cards -->
+        <div class="flex flex-col md:flex-row mb-10">
+          <!-- MAP -->
+          <div class=" w-100% md:w-1/2">
+            <iframe title="Mapa de las refaccionarias de Autoelectrica-Guevara-SA-de-CV" src="https://www.google.com/maps/d/u/0/embed?mid=1EUYv3t2kmVjC06rEkq_wtsbB5t8VDr0&ehbc=2E312F&callback=Function.prototype" width="100%" height="501px"></iframe>
+          </div>
+          <!-- CARDS -->
+          <div class="flex flex-col w-100% md:w-1/2 h-100% pt-20 items-center">
+            <div class="flex flex-col bg-brightYellow ml-3 mt-2 p-6 border-2 border-black rounded w-10/12 font-bold w-70% h-1/4 hover:bg-yellow-200">
+              <a aria-label="Ubicación Vicente Segura" class="underline hover:text-lightBlue underline-offset-2	" href="https://goo.gl/maps/XWT7y4NdCs3jtmbp6">REFACCIONARIA VICENTE SEGURA</a>
+              <p>Vicente Segura 210 col.
+                Periodista detrás del mercado Revolución
+                Pachuca, Hgo</p>
+            </div>
+            <div class="flex flex-col bg-brightYellow ml-3 mt-2 p-6 border-2 border-black rounded w-10/12 text-black font-bold h-1/4 hover:bg-yellow-200">
+              <a aria-label="Ubicación Madero" class="underline hover:text-lightBlue underline-offset-2" href="https://goo.gl/maps/WzFig3AKTBUUbcw66">REFACCIONARIA AV. MADERO</a>
+              <p>Av Francisco I. Madero 1002, col. Doctores al interior de la gasolinera Ludlow en Pachuca, Hgo.</p>
+            </div>
+            <div class="flex flex-col bg-brightYellow ml-3 mt-2 p-6 border-2 border-black rounded w-10/12 text-black font-bold h-1/4 hover:bg-yellow-20">
+              <a aria-label="Ubicación Madero" class="underline hover:text-lightBlue underline-offset-2	" href="https://goo.gl/maps/XWT7y4NdCs3jtmbp6">TALLLER</a>
+              <p>Nuestro taller se encuentra en Vicente Segura 210 col. Periodista Pachuca, Hgo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIENES SOMOS -->
+    <section id="quienes-somos">
+      <div class="flex flex-col items-center content-center bg-darkGreyishBlue text-bold">
+        <div class="flex flex-col items-center my-8">
+          <h1 class="text-5xl font-bold text-brightYellow">QUIENES SOMOS</h1>
+          <p class="text-white">Somos una empresa familiar con más de 50 años de experiencia en el servicio automotriz</p>
+        </div>
+        <!-- CARDS -->
+        <div class="flex flex-col px-5 md:px-20 content-center text-white text-bold">
+          <!-- CARD1 -->
+          <div class="flex flex-col px-0 py-5 md:px-20 md:flex-row">
+            <img class="w-100% md:w-1/3" src="/img/Mision.jpg" alt="Refaccionaria de Vicente Segura">
+            <div class="flex flex-col w-100% px-6 md:w-3/4">
+              <h1 class="text-5xl">Misión</h1>
+              <p>Dedicar esfuerzos en conjunto para brindar a los clientes particulares y de dependencias públicas y privadas; soluciones en problemas del sistema eléctrico y de la movilidad de sus vehículos. Esto a través del abastecimiento de refacciones oportuno ó del servicio de reparación y mantenimiento. Haciéndolo siempre con eficiencia y calidad; cumpliendo con las expectativas del cliente y con una filosofía de atención y servicio.</p>
+            </div>
+          </div>
+          <!-- CARD2 -->
+          <div class="flex flex-col-reverse py-5 md:px-20 md:flex-row">
+            <div class="flex flex-col px-6 h-100% md:w-3/4">
+              <h1 class="text-5xl">Visión</h1>
+              <p>Ser una empresa líder y de vanguardia que trascienda en el tiempo, que se distinga por su trabajo serio, esmerado y honesto. Con un espíritu de servicio, respeto y compromiso con sus clientes, sus trabajadores y con la comunidad a la que pertenece.</p>
+            </div>
+            <img class="h-100% md:w-1/3" src="/img/Vision.jpg" alt="Refaccionaria de Vicente Segura">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <div class="flex flex-col items-center pb-20 bg-lightBlue text-2xl text-bold">
+        <!-- COUNTERS -->
+        <div class="flex flex-col w-full justify-around text-3xl font-bold pt-10 md:flex-row ">
+          <div class="flex flex-row items-center md:flex-col">
+            <div id="anos" class="num text-6xl md:text-8xl text-yellow-300" data-val="50">0</div>
+            <h1 class="text-3xl font-bold">Años de experiencia</h1>
+          </div>
+          <div class="flex flex-row items-center md:flex-col">
+            <div id="ubicaciones" class="num text-6xl md:text-8xl text-yellow-300" data-val="2">0</div>
+            <h1 class="text-3xl font-bold">Ubicaciones</h1>
+          </div>
+          <div class="flex flex-row items-center md:flex-col">
+            <div id="refacciones" class="num text-6xl md:text-8xl text-yellow-300" data-val="12000">11150</div>
+            <h1  class="text-3xl font-bold">Refacciones</h1>
+          </div>
+        </div>
+        <!-- INFO -->
+        <div class="flex flex-col items-center px-6 py-6">
+          <a href="https://goo.gl/maps/XWT7y4NdCs3jtmbp6" class="font-bold pt-6"><i class="fa-solid fa-location-dot pr-4 text-brightYellow"></i>Vicente Segura 210, col. Periodista 42060 Pachuca de Soto, Hgo</a>
+          <a href="https://goo.gl/maps/WzFig3AKTBUUbcw66" class="font-bold pt-6"><i class="fa-solid fa-location-dot pr-4 text-brightYellow"></i>Av Francisco I. Madero 1002, Doctores, 42090 Pachuca de Soto, Hgo.</a>
+          <a href="#" class="font-bold pt-6"><i class="fa-solid fa-phone pr-4 text-brightYellow"></i>Refaccionaria Vicente Segura: +521 771 713 1011</a>
+          <a href="#" class="font-bold pt-6"><i class="fa-solid fa-phone pr-4 text-brightYellow"></i>Refaccionaria Av. Madero+521 771 718 4583</a>
+          <a href="#" class="font-bold pt-6"><i class="fa-solid fa-envelope pr-4 text-brightYellow"></i>aguevarasa@yahoo.com.mx</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="flex flex-col w-full p-20 md:flex-row text-white font-bold bg-darkGreyishBlue">
+        <div class="flex flex-col w-1/3 md:w-full items-center text-white font-bold">
+          <h1 class="text-bold text-4xl">NOSOTROS</h1>
+          <p>Somos una empresa familiar con más de 40 años en el servicio automovílistico</p>
+        </div>
+        <div class="flex flex-col w-1/3 md:w-full items-center">
+          <div class="media-body">
+            <h1 class="text-bold text-4xl">LINKS IMPORTANTES</h1> 
+            <a class="underline hover:text-lightBlue" aria-label="Términos y condiciones" href="tos.html">Términos y condiciones</a>, 
+            <a class="underline hover:text-lightBlue" aria-label="Política de privacidad" href="privacy.html">Política de privacidad</a>
+          </div>
+        </div>
+        <div class="flex flex-col w-1/3 md:w-full items-center">
+          <h1 class="text-bold text-4xl">REDES SOCIALES</h1>
+          <span class="fa-stack mt-4">
+            <a aria-label="Facebook logo" href="https://www.facebook.com/Autoelectrica-Guevara-SA-de-CV-374653962888632">
+                <i class="fas fa-circle fa-stack-2x text-blue-100 text-5xl leading-6"></i>
+                <i class="fab fa-facebook-f fa-stack-1x text-blue-500 text-4xl pl-1 leading-6"></i>
+            </a>
+          </span>
+        </div>
+      </div>
+      <div class="flex justify-center items-center bg-darkGreyishBlue w-full text-white md:display-block">
+        Copyright &copy; Autoelectrica-Guevara-SA-de-CV All Right Reserved
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="/script.js"></script>
+  </body>
+</html>
